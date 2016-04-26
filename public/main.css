@@ -46,3 +46,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+header {
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+}
+
+header ul li{
+	display: inline;
+	padding: 2%;
+}
