@@ -1,5 +1,5 @@
 'use strict';
-if (this.AppName === undefined) this.AppName = {};
+if (this.ovenBits === undefined) this.ovenBits = {};
 
 (function(context) {
 
@@ -10,6 +10,6 @@ if (this.AppName === undefined) this.AppName = {};
 
   }
 
-  window.AppName.start = start;
+  window.ovenBits.start = start;
 
-})(window.AppName);
+})(window.ovenBits);

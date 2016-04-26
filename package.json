@@ -1,0 +1,23 @@
+{
+  "name": "ovenbits",
+  "version": "1.0.0",
+  "description": "a copy of the oven bits website built by me",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eric-Humpert-tiy-assignments/OvenBits.git"
+  },
+  "author": "Eric Humpert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eric-Humpert-tiy-assignments/OvenBits/issues"
+  },
+  "homepage": "https://github.com/Eric-Humpert-tiy-assignments/OvenBits#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
