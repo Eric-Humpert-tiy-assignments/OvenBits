@@ -47,6 +47,12 @@ table {
 	border-spacing: 0;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /********************************************************
 Header menu formatting
 ********************************************************/
@@ -64,11 +70,20 @@ header ul li{
 	padding: 2%;
 }
 
+.jobs-button {
+	border: 2px solid #FFF;
+	border-radius: 2px;
+	padding: 1.5% 3%;
+}
+
 .logo-holder img{
-	width: 9%;
+	width: 14%;
+	padding-top: 5%;
+	padding-left: 5%;
 }
 
 #greeting-comment {
+	background: url(http://d1a9fbb3yksxfz.cloudfront.net/assets/video/home-video.webm);
 	font-family: 'Roboto', sans-serif;
 	font-size: 3.5em;
 	font-weight: 300;
@@ -116,4 +131,95 @@ Page content stuff
 	font-size: 2.5em;
 	font-weight: 300;
 	padding-bottom: 1%;
+}
+
+.banner-image img {
+	width: 100%;
+}
+
+/*******************************************************
+Quote block styling
+*******************************************************/
+
+.quote-block {
+	color: #201D1C;
+	font-family:'Roboto Slab', serif;
+	font-style: italic;
+	margin: 8% 0;
+	text-align: center;
+}
+
+.quote-block h1 {
+	font-size: 3em;
+	font-weight: 200;
+}
+
+.quote-block h2 {
+	font-weight: 400;
+	font-size: 1.75em;
+	padding-right: 10%;
+	padding-top: 2%;
+	text-align: right;
+}
+
+.quote-block p{
+	font-weight: 300;
+	line-height: normal;
+	padding-right: 10%;
+	text-align: right;
+
+}
+
+/*******************************************************
+Column formatting
+*******************************************************/
+
+.column-section .column {
+	display: inline-block;
+	float: left;
+	margin: 2%;
+	width: 28%;
+}
+
+.column h4 {
+	font-size: 2em;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+}
+
+.column p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	font-weight: 200;
+	line-height: normal;
+	width: 100%;
+}
+
+.column img{
+	width: 25%;
+	margin: 0 auto;
+}
+
+.view-all-button {
+	border: 2px solid #201D1C;
+	border-radius: 2px;
+	clear: both;
+	font-family: 'Roboto', sans-serif;
+	padding: 1% 2%;
+	margin: 1.5em auto;
+	text-align: center;
+	width: 20%;
+}
+
+
+/**********************************************
+Footer styling
+**********************************************/
+
+.footer {
+	background-color: #201D1C;
+	clear: both;
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 }
