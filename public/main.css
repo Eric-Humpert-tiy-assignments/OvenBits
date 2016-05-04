@@ -53,6 +53,10 @@ table {
           box-sizing: border-box;
 }
 
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
 /********************************************************
 Header menu formatting
 ********************************************************/
@@ -61,13 +65,20 @@ header {
 	color: #FFF;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
+	top: 0;
 	position: fixed;
 	width: 100%;
 }
 
+header ul {
+	position: absolute;
+	top: 105px;
+	right: 0;
+}
+
 header ul li{
 	display: inline;
-	padding: 2%;
+	padding: 2em;
 }
 
 .jobs-button {
@@ -82,14 +93,21 @@ header ul li{
 	padding-left: 5%;
 }
 
+.video-hero {
+	position: fixed;
+	top: 0;
+	z-index: -1;
+}
+
 #greeting-comment {
-	background: url(http://d1a9fbb3yksxfz.cloudfront.net/assets/video/home-video.webm);
+	background-color: transparent;
+	color: #FFF;
 	font-family: 'Roboto', sans-serif;
 	font-size: 3.5em;
 	font-weight: 300;
-	margin: 10%;
-
+	padding: 5em 1em;
 	text-align: center;
+
 }
 
 #greeting-comment span {
@@ -99,6 +117,10 @@ header ul li{
 /***********************************************************
 Page content stuff
 ***********************************************************/
+
+.page-stuff {
+	background-color: #FFF;
+}
 
 .office-image {
 	width: 100%;
@@ -140,11 +162,16 @@ Page content stuff
 
 .banner-image {
 	background-image: url(img/vogue.jpg);
+	background-position: center;
+	background-size: cover;
 	font-family: 'Roboto', sans-serif;
+	margin-bottom: 1em;
 }
 
 .app-description {
+	background-color: rgba(0, 0, 0, 0.5);
 	color: #FFF;
+	padding: 10em 1em;
 }
 
 .app-description h2 {
@@ -160,6 +187,38 @@ Page content stuff
 	padding: 1%;
 	text-align: center;
 }
+
+/***********************************************************
+Project row styling
+***********************************************************/
+.project {
+	background-image: url(img/cellucor.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 33.333333%;
+}
+
+.project-desc {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #FFF;
+	font-weight: 100;
+	padding: 10em 5em;
+	text-align: center;
+}
+
+.project-desc h2 {
+	font-size: 4.5em;
+	font-weight: 200;
+}
+
+.project-desc p {
+		font-size: 1.25em;
+		line-height: normal;
+}
+
+
+
+
 /*******************************************************
 Quote block styling
 *******************************************************/
@@ -198,14 +257,14 @@ Column formatting
 *******************************************************/
 
 .column-section {
-	margin: 0 auto;
+	padding: 2em;
 }
 
-.column-section .column {
-	display: inline-block;
+.column {
 	float: left;
-	margin-right: 1.5em;
-	width: 28%;
+	padding: 1%;
+	width: 33.333333%;
+	margin-bottom: 2em;
 }
 
 .column h4 {
@@ -224,7 +283,10 @@ Column formatting
 }
 
 .column img{
-	width: 35%;
+
+	width: 50%;
+	padding: 1em 3em;
+
 }
 
 .button {
@@ -238,24 +300,39 @@ Column formatting
 	width: 20%;
 }
 
+/*****************************************************************
+Hover functions for the buttons on the page
+*****************************************************************/
+
 .button:hover {
 	background-color: #201D1C;
 	color: #FFF;
+}
+
+.nav-links a.jobs-button:hover {
+	background-color: #FFF;
+	color: #201D1C;
 }
 
 /*****************************************************************
 Join Us formatting
 *****************************************************************/
 
-.work-with-us-section img {
-	float: left;
-	width: 50%;
+.work-with-us-section {
+	position: relative;
+}
+
+.work-with-us-section .group-photo {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+
 }
 
 .join-us-box {
 	background-color: #F8F8F8;
 	color: #201D1C;
-	float: right;
 	font-family: 'Roboto', sans-serif;
 	width: 50%;
 }
@@ -288,18 +365,14 @@ Company Logo gallery styling
 .company-logos-gallery-section h2 {
 	font-size: 1.5em;
 	font-weight: 500;
-	padding-top: 2.5em;
+	padding: 2.5em;
 	text-align: center;
 }
 
-.company-logos-gallery {
-
-}
-
 .company-logos-gallery img {
-	display: inline-block;
+	display: inline;
 	float: left;
-	padding: 2em;
+	padding: 1%;
 	width: 20%;
 }
 
