@@ -96,6 +96,7 @@ header ul li{
 .video-hero {
 	position: fixed;
 	top: 0;
+	width: 100%;
 	z-index: -1;
 }
 
@@ -191,24 +192,63 @@ Page content stuff
 /***********************************************************
 Project row styling
 ***********************************************************/
+
 .project {
-	background-image: url(img/cellucor.jpg);
 	background-position: center;
 	background-size: cover;
-	width: 33.333333%;
+	float: left;
+	width: 32.5%;
+	height: 25em;
+}
+
+.project1 {
+	background-image: url(img/cellucor.jpg);
+	margin-right: 1em;
+}
+
+.project2 {
+	background-image: url(img/over-900.jpg);
+	margin-right: 1em;
+}
+
+.project3 {
+	background-image: url(img/bts.jpg);
+}
+
+.project4 {
+	background-image: url(img/bafk.jpg);
+	margin-top: 1em;
+	margin-right: .75em;
+	margin-bottom: 1em;
+	width: 70%;
+}
+
+.see-more {
+	background-image: url(img/5-900.jpg);
+	float: right;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: 29%;
 }
 
 .project-desc {
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #FFF;
 	font-weight: 100;
-	padding: 10em 5em;
+	width: 100%;
+	height: 100%;
 	text-align: center;
 }
 
+.project-desc h2, .project-desc p {
+	padding: 5%;
+}
+
 .project-desc h2 {
-	font-size: 4.5em;
+	font-size: 4em;
 	font-weight: 200;
+	transition-property: margin;
+	transition-duration: 500ms;
 }
 
 .project-desc p {
@@ -224,6 +264,7 @@ Quote block styling
 *******************************************************/
 
 .quote-block {
+	clear: both;
 	color: #201D1C;
 	font-family:'Roboto Slab', serif;
 	font-style: italic;
@@ -319,25 +360,27 @@ Join Us formatting
 *****************************************************************/
 
 .work-with-us-section {
+	background-image: url(img/conference-room-1.jpg);
+	background-position: left;
+	background-repeat: no-repeat;
 	position: relative;
-}
-
-.work-with-us-section .group-photo {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-
 }
 
 .join-us-box {
 	background-color: #F8F8F8;
 	color: #201D1C;
 	font-family: 'Roboto', sans-serif;
+	margin-left: 50%;
+	padding: 2em;
 	width: 50%;
 }
 
+.join-us-box h2 {
+	font-size: 2
+}
+
 .join-us-box p {
+	font-size: 1.25em;
 	font-weight: 200;
 	text-align: left;
 	margin: 0 25%;
@@ -369,11 +412,15 @@ Company Logo gallery styling
 	text-align: center;
 }
 
-.company-logos-gallery img {
-	display: inline;
+.company-logos-gallery li {
+	display: inline-block;
 	float: left;
 	padding: 1%;
 	width: 20%;
+}
+
+.company-logos-gallery img {
+	width: 100%;
 }
 
 /**********************************************
