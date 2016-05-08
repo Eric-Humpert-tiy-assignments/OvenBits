@@ -78,13 +78,13 @@ header ul {
 
 header ul li{
 	display: inline;
-	padding: 2em;
+	padding: 1.5em;
 }
 
 .jobs-button {
 	border: 2px solid #FFF;
 	border-radius: 2px;
-	padding: 1.5% 3%;
+	padding: 1em 1.5em;
 }
 
 .logo-holder img{
@@ -290,7 +290,6 @@ Quote block styling
 	line-height: normal;
 	padding-right: 10%;
 	text-align: right;
-
 }
 
 /*******************************************************
@@ -324,10 +323,8 @@ Column formatting
 }
 
 .column img{
-
 	width: 50%;
 	padding: 1em 3em;
-
 }
 
 .button {
@@ -377,13 +374,14 @@ Join Us formatting
 
 .join-us-box h2 {
 	font-size: 2
+	margin-left: 10%;
 }
 
 .join-us-box p {
 	font-size: 1.25em;
 	font-weight: 200;
 	text-align: left;
-	margin: 0 25%;
+	margin: 0 10%;
 }
 
 .join-us {
@@ -392,7 +390,7 @@ Join Us formatting
 
 .join-us-button {
 	padding: 2% 5%;
-	margin-left: 25%;
+	margin-left: 10%;
 	width: 40%;
 }
 
@@ -433,4 +431,14 @@ Footer styling
 	color: #FFF;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
+}
+
+/**********************************************
+Media Queries
+**********************************************/
+
+@media screen and (max-width: 950px) {
+	.jobs-button {
+		display: none;
+	}
 }
