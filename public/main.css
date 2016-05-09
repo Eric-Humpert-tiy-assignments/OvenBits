@@ -119,6 +119,15 @@ header ul li{
 Page content stuff
 ***********************************************************/
 
+.w-button {
+	border: 2px solid #FFF;
+	border-radius: 2px;
+	display: none;
+	font-weight: 400;
+	padding: 1.5em 2em;
+}
+
+
 .page-stuff {
 	background-color: #FFF;
 }
@@ -166,6 +175,8 @@ Page content stuff
 	background-position: center;
 	background-size: cover;
 	font-family: 'Roboto', sans-serif;
+	height: 25em;
+	margin-top: 5em;
 	margin-bottom: 1em;
 }
 
@@ -231,31 +242,53 @@ Project row styling
 	width: 29%;
 }
 
-.project-desc {
+.see-more-overlay {
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #FFF;
 	font-weight: 100;
-	width: 100%;
 	height: 100%;
+	padding-top: 7.5em;
+	padding-bottom: 7.5em;
 	text-align: center;
+	width: 100%;
 }
 
-.project-desc h2, .project-desc p {
-	padding: 5%;
+.see-more-overlay h2 {
+	padding: 1%;
 }
 
-.project-desc h2 {
+.see-more-overlay h2 {
 	font-size: 4em;
 	font-weight: 200;
 }
 
-.project-desc p {
+.text-overlay{
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #FFF;
+	font-weight: 100;
+	height: 100%;
+	padding-top: 7.5em;
+	padding-bottom: 7.5em;
+	text-align: center;
+	width: 100%;
+}
+
+.text-overlay h2, .text-overlay p {
+	padding: 1%;
+}
+
+.text-overlay h2 {
+	font-size: 4em;
+	font-weight: 200;
+}
+
+.text-overlay p {
 	font-size: 1.25em;
 	line-height: normal;
 }
 
-
-
+.view-project {
+}
 
 /*******************************************************
 Quote block styling
@@ -273,6 +306,7 @@ Quote block styling
 .quote-block h1 {
 	font-size: 3em;
 	font-weight: 200;
+	padding-top: 10%;
 }
 
 .quote-block h2 {
@@ -340,6 +374,8 @@ Column formatting
 Hover functions for the buttons on the page
 *****************************************************************/
 
+
+
 .button:hover {
 	background-color: #201D1C;
 	color: #FFF;
@@ -353,6 +389,26 @@ Hover functions for the buttons on the page
 .nav-links li:hover {
 	border-bottom: 2px solid #FFF;
 	padding-bottom: .25em;
+	width: 100%;
+}
+
+.see-more-overlay:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+	transition-duration: 500ms;
+}
+
+.text-overlay:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding-top: 2em;
+	transition: 5em;
+	transition-duration: 500ms;
+}
+
+.text-overlay:hover .w-button:hover {
+	background-color: #FFF;
+	color: #201D1C;
+	display: inline-block;
+	font-weight: 400;
 }
 
 /*****************************************************************
@@ -385,10 +441,12 @@ Join Us formatting
 }
 
 .join-us-desc h3 {
+	font-family: 'Roboto Slab', serif;
 	font-size: 1.25em;
 	font-style: italic;
 	font-weight: 200;
 	margin-bottom: 2em;
+	padding-top: .25em;
 }
 
 .join-us-box p {
