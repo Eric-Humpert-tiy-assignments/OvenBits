@@ -247,13 +247,11 @@ Project row styling
 .project-desc h2 {
 	font-size: 4em;
 	font-weight: 200;
-	transition-property: margin;
-	transition-duration: 500ms;
 }
 
 .project-desc p {
-		font-size: 1.25em;
-		line-height: normal;
+	font-size: 1.25em;
+	line-height: normal;
 }
 
 
@@ -352,6 +350,11 @@ Hover functions for the buttons on the page
 	color: #201D1C;
 }
 
+.nav-links li:hover {
+	border-bottom: 2px solid #FFF;
+	padding-bottom: .25em;
+}
+
 /*****************************************************************
 Join Us formatting
 *****************************************************************/
@@ -372,16 +375,29 @@ Join Us formatting
 	width: 50%;
 }
 
-.join-us-box h2 {
-	font-size: 2
-	margin-left: 10%;
+.join-us-desc {
+	margin: 10%;
+}
+
+.join-us-desc h2 {
+	font-size: 3em;
+	font-weight: 300;
+}
+
+.join-us-desc h3 {
+	font-size: 1.25em;
+	font-style: italic;
+	font-weight: 200;
+	margin-bottom: 2em;
 }
 
 .join-us-box p {
 	font-size: 1.25em;
 	font-weight: 200;
-	text-align: left;
 	margin: 0 10%;
+	line-height: normal;
+	text-align: left;
+
 }
 
 .join-us {
@@ -411,14 +427,14 @@ Company Logo gallery styling
 }
 
 .company-logos-gallery li {
-	display: inline-block;
+	display: inline;
 	float: left;
-	padding: 1%;
+	padding: 2%;
 	width: 20%;
 }
 
 .company-logos-gallery img {
-	width: 100%;
+	width: 75%;
 }
 
 /**********************************************
